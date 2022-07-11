@@ -18,5 +18,7 @@ def operations(choice: int, num1: int, num2: int):
         return f"Multilpication: {num1*num2}"
     elif choice == 4:
         return f"Division: {num1//num2}"
+    elif choice == 5:
+        return f"Division: {num1//num2}"
     else:
         return "Errro: Entered Wrong choice"
