@@ -8,7 +8,7 @@ app = FastAPI()
 def show():
     return "Hey"
 
-@app.get("/operations")
+@app.post("/operations")
 def operations(choice: int, num1: int, num2: int):
     if choice == 1:
         return f"Addition: {num1 + num2}"
@@ -21,6 +21,6 @@ def operations(choice: int, num1: int, num2: int):
     else:
         return "Error: Entered Wrong choice"
 
-@app.get("/echo")
+@app.post("/echo")
 def showstring(string1: str):
     return f"Enter String is: {string1}"
